@@ -1,0 +1,26 @@
+package strings;
+public class BufferExample {
+    public void stringAppend(){
+        StringBuffer buffer = new StringBuffer("BIET");
+        System.out.println("Original String: " + buffer);
+        buffer.append(" Davangere");
+        System.out.println("New String: " + buffer);
+    }
+    public void stringInsert(){
+        StringBuffer buffer = new StringBuffer("JA"); // JA
+        System.out.println("original String: " + buffer);
+        buffer.insert(1, "AV");   // JAVA
+        System.out.println("New String: " + buffer);
+    }
+    public void stringReverse(){
+        StringBuffer buffer = new StringBuffer("TEIB");
+        System.out.println("original String: " + buffer);
+        buffer.reverse();
+        System.out.println("New String: " + buffer);
+    }
+    public static void main(String[] args) {
+        new BufferExample().stringAppend();
+        new BufferExample().stringInsert();
+        new BufferExample().stringReverse();
+    }
+}
